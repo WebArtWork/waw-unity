@@ -31,8 +31,71 @@ npm install -g waw
 | ---------------------- | ------------------------------------------------------------- |
 | `waw build <platform>` | Builds the specified platform (e.g., `waw build vr-android`). |
 | `waw build all`        | Builds all configured platforms.                              |
-| `waw clean`            | Cleans build files to free up space.                          |
+| `waw build clean`      | Cleans build files to free up space.                          |
 | `waw status`           | Shows project status, including enabled platforms.            |
+
+### **Scene Management**
+
+| Command                   | Description                                                           |
+| ------------------------- | --------------------------------------------------------------------- |
+| `waw scene add <name>`    | Creates a new scene from a template (e.g., `waw scene add MainMenu`). |
+| `waw scene remove <name>` | Deletes an existing scene from the project.                           |
+| `waw scene save <name>`   | Saves the current scene as a template for future reuse.               |
+| `waw scene fetch <name>`  | Retrieves a saved scene template and adds it to the project.          |
+
+### **Model Management**
+
+| Command                   | Description                                                 |
+| ------------------------- | ----------------------------------------------------------- |
+| `waw model add <name>`    | Adds a 3D model from a shared asset library.                |
+| `waw model remove <name>` | Deletes a model from the project.                           |
+| `waw model save <name>`   | Saves a model to a reusable template library.               |
+| `waw model fetch <name>`  | Retrieves a model template and imports it into the project. |
+
+### **Prefab Management**
+
+| Command                    | Description                                          |
+| -------------------------- | ---------------------------------------------------- |
+| `waw prefab add <name>`    | Adds a prefab to the project from a shared template. |
+| `waw prefab remove <name>` | Deletes a prefab from the project.                   |
+| `waw prefab save <name>`   | Saves a prefab as a template for reuse.              |
+| `waw prefab fetch <name>`  | Retrieves a prefab from a shared library.            |
+
+### **Material Management**
+
+| Command                      | Description                            |
+| ---------------------------- | -------------------------------------- |
+| `waw material add <name>`    | Adds a material from a shared library. |
+| `waw material remove <name>` | Deletes a material from the project.   |
+| `waw material save <name>`   | Saves a material for reuse.            |
+| `waw material fetch <name>`  | Retrieves a saved material template.   |
+
+### **Audio Management**
+
+| Command                   | Description                         |
+| ------------------------- | ----------------------------------- |
+| `waw audio add <name>`    | Adds an audio file to the project.  |
+| `waw audio remove <name>` | Deletes an audio file.              |
+| `waw audio save <name>`   | Saves an audio asset as a template. |
+| `waw audio fetch <name>`  | Retrieves a saved audio asset.      |
+
+### **Script Management**
+
+| Command                    | Description                          |
+| -------------------------- | ------------------------------------ |
+| `waw script add <name>`    | Adds a script from a shared library. |
+| `waw script remove <name>` | Deletes a script from the project.   |
+| `waw script save <name>`   | Saves a script for reuse.            |
+| `waw script fetch <name>`  | Retrieves a saved script template.   |
+
+### **UI Layout Management**
+
+| Command                | Description                              |
+| ---------------------- | ---------------------------------------- |
+| `waw ui add <name>`    | Adds a UI layout from a shared template. |
+| `waw ui remove <name>` | Deletes a UI layout.                     |
+| `waw ui save <name>`   | Saves a UI layout for reuse.             |
+| `waw ui fetch <name>`  | Retrieves a saved UI layout.             |
 
 ## Supported Platforms
 
@@ -66,12 +129,3 @@ waw build vr-android
 # Build all configured platforms
 waw build all
 ```
-
-## Next Steps
-
-- Ensure **waw CLI** is installed and configured.
-- Add, configure, and build platforms as needed.
-- Automate workflows with **CI/CD integration**.
-
-🚀 **waw Unity CLI makes cross-platform Unity development fast and efficient!**
-
